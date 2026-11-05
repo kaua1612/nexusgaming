@@ -1,0 +1,22 @@
+Etapa 1 — Criar a página de Jogos
+No VS Code, vá até a pasta onde está seu index.html.
+1. Clique com o botão direito na pasta site-nexus.
+2. Clique em New File (Novo Arquivo).
+3. Dê o nome:
+jogos.html
+Etapa 2 — Fazer o link funcionar
+Lembra deste código que você já criou?
+<a href="#Jogos">Jogos</a>
+Esse link procura uma seção dentro da mesma página.
+Para abrir outro arquivo, você vai usar:
+<a href="jogos.html">Jogos</a>
+Percebeu a diferença?
+- #Jogos → procura uma seção na página atual.
+- jogos.html → abre outro arquivo HTML.
+Sua missão agora 🎮
+Quero que você faça somente duas coisas:
+1. Crie o arquivo jogos.html.
+2. Altere o link Jogos para apontar para jogos.html.
+Ainda não precisa escrever nada dentro do novo arquivo.
+
+Quando terminar, vamos construir a página exclusiva de jogos, com cards de Fortnite, GTA V, Minecraft e outros! 🚀
