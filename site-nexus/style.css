@@ -1,0 +1,114 @@
+/* TÍTULO PRINCIPAL */
+.TituloSite {
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+/* FUNDO DO SITE E ROLAGEM SUAVE */
+html {
+  scroll-behavior: smooth; /* Faz a página deslizar suavemente até à secção */
+}
+
+.background {
+  background-color: #080812;
+}
+
+/* SECÇÕES */
+.Inicio {
+  font-size: 30px;
+  color: rgb(252, 252, 252);
+  text-align: center;
+}
+.Noticias {
+  font-size: 30px;
+  color: rgb(252, 252, 252);
+  text-align: center; 
+}
+.E-Esports {
+  font-size: 30px;
+  color: rgb(252, 252, 252);
+  text-align: center; 
+}
+.Jogos {
+  font-size: 30px;
+  color: rgb(252, 252, 252);
+  text-align: center;
+}
+.Pboasvindas {
+  font-size: 30px;
+  color: rgb(252, 252, 252);
+  text-align: center;
+}
+
+/*----------------ABA LATERAL----------------*/
+.Menu-Lateral {
+  background-color: #151B35;
+  width: 120px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  z-index: 999;
+}
+
+.Menuaba {
+  font-size: 40px;
+  color: #7B2CFF;
+  text-align: center;
+}
+
+/* ESTILOS DOS LINKS DO MENU (Transformados em botões) */
+.InicioA, .NoticiasA, .E-EsportsA, .JogosA {
+  font-size: 20px;
+  color: rgb(245, 243, 243);
+  text-align: center;
+  text-decoration: none; /* Tira o sublinhado do link */
+  background-color: #5002b6;
+  border-style: none;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InicioA:hover, 
+.NoticiasA:hover,
+.E-EsportsA:hover, 
+.JogosA:hover {
+  background-color: #7b2cff; 
+  cursor: pointer;
+}
+
+/* BOTÃO FIXO DE TOGGLE (Abrir/Fechar Menu) */
+.Botao-Menu-Toggle {
+  background-color: #5002b6;
+  color: rgb(245, 243, 243);
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000; /* Fica sempre acima do menu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Botao-Menu-Toggle:hover {
+  background-color: #7b2cff;
+}
+
+/* CLASSE PARA ESCONDER O MENU */
+.Menu-Lateral.escondido {
+  display: none !important;
+}

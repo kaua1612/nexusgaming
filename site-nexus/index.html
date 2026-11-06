@@ -1,92 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexus Gaming</title>
-    <style>
-        /* TÍTULO PRINCIPAL */
-        .TituloSite {
-            text-align: center;
-            font-size: 50px;
-            color: #FFFFFF;
-        }
-        
-        /* FUNDO DO SITE */
-        .background {
-            background-color: #080812;
-        }
-        
-        /* MENU LATERAL */
-        .Menu-Lateral {
-            background-color: #17172B;
-            width: 200px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            left: 0;
-            padding: 15px;
-        }
-        
-        /* TÍTULOS */
-        h2 {
-            color: #00C8FF;
-        }
-        
-        /* PARÁGRAFOS */
-        p {
-            color: #FFFFFF;
-        }
-        
-        /* LINKS */
-        a {
-            color: #00C8FF;
-            text-decoration: none;
-        }
-        
-        /* EFEITO AO PASSAR O MOUSE */
-        a:hover {
-            color: #7B2CFF;
-        }
-    </style>
-</head>
-<body class="background">
-    <h1 class="TituloSite">
-        Welcome to Site Nexus
-    </h1>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+
+  <body class="background">
+    <h1 class="TituloSite">Welcome to Site Nexus</h1>
+
+    <!-- Botão Fixo de Abrir/Fechar Menu -->
+    <button class="Botao-Menu-Toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Menu Lateral com Links de Âncora -->
     <nav class="Menu-Lateral">
-        <h2>Menu</h2>
-        <a href="#Inicio">Inicio</a>
-        <br>
-        <a href="#Noticias">Noticias</a>
-        <br>
-        <a href="#E-Esports">E-Esports</a>
-        <br>
-        <a href="#Jogos">Jogos</a>
-
-
+      <div class="aba"></div>
+      <h2 class="Menuaba">Menu</h2>
+      <a href="Inicio" class="InicioA">Inicio</a>
+      <a href="noticias.html" class="NoticiasA">Noticias</a>
+      <a href="esports.html" class="E-EsportsA">E-Sports</a>
+      <a href="jogos.html" class="JogosA">Jogos</a>
     </nav>
+
+    <!-- Secções do Site organizadas com IDs -->
     <section id="Inicio">
-        <h2>Inicio</h2>
-        <p>Bem-vindo ao nosso site!</p>
-    </section>
-    <section id="Noticias">
-        <h2>Noticias</h2>
-        <p>Confira as últimas notícias do mundo dos games!</p>
-    </section>
-    <section id="E-Esports">
-        <h2>E-EsportAs</h2>
-        <p>Fique por dentro das competições eletrônicas mais importantes!</p>
-    </section>
-    <section id="Jogos">
-        <h2>Jogos</h2>
-        <p>Descubra os melhores jogos do momento!</p>
+      <h2 class="Inicio">Inicio</h2>
+      <p class="Pboasvindas">Bem-vindo ao nosso site!</p>
     </section>
 
-</body>
-    <script>
+    <section id="Noticias" class="Noticias">
+      <h2 class="Noticias">Noticias</h2>
+      <p>Confira as últimas notícias do mundo dos games!</p>
+    </section>
 
-    </script>
+    <section id="E-Esports" class="E-Esports">
+      <h2 class="E-Esports">E-Esports</h2>
+      <p>Fique por dentro das competições eletrônicas mais importantes!</p>
+    </section>
 
+    <section id="Jogos" class="Jogos">
+      <h2 class="Jogos">Jogos</h2>
+      <p>Descubra os melhores jogos do momento!</p>
+    </section>
 
+    <!-- Script carregado no final do corpo -->
+    <script src="script.js"></script>
+  </body>
 </html>
