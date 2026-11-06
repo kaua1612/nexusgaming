@@ -3,49 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus Gaming</title>
+    <title>Início | Nexus Gaming</title>
     <link rel="stylesheet" href="style.css" />
-    
   </head>
 
-  <body class="background">
-    <h1 class="TituloSite">Welcome to Site Nexus</h1>
+  <body>
+    <button class="botao-menu" onclick="toggleMenu()">☰</button>
 
-    <!-- Botão Fixo de Abrir/Fechar Menu -->
-    <button class="Botao-Menu-Toggle" onclick="toggleMenu()">☰</button>
-
-    <!-- Menu Lateral com Links de Âncora -->
-    <nav class="Menu-Lateral">
-      <div class="aba"></div>
-      <h2 class="Menuaba">Menu</h2>
-      <a href="Inicio" class="InicioA">Inicio</a>
-      <a href="noticias.html" class="NoticiasA">Noticias</a>
-      <a href="esports.html" class="E-EsportsA">E-Sports</a>
-      <a href="jogos.html" class="JogosA">Jogos</a>
+    <nav class="menu-lateral">
+      <h2 class="menu-titulo">Menu</h2>
+      <a href="index.html" class="menu-link ativo">Início</a>
+      <a href="noticias.html" class="menu-link">Notícias</a>
+      <a href="esports.html" class="menu-link">eSports</a>
+      <a href="jogos.html" class="menu-link">Jogos</a>
     </nav>
 
-    <!-- Secções do Site organizadas com IDs -->
-    <section id="Inicio">
-      <h2 class="Inicio">Inicio</h2>
-      <p class="Pboasvindas">Bem-vindo ao nosso site!</p>
-    </section>
+    <header>
+      <h1 class="titulo-site">Nexus Gaming</h1>
+    </header>
 
-    <section id="Noticias" class="Noticias">
-      <h2 class="Noticias">Noticias</h2>
-      <p>Confira as últimas notícias do mundo dos games!</p>
-    </section>
+    <main>
+      <section>
+        <h2 class="titulo-secao">Início</h2>
+        <p class="texto">Bem-vindo ao Nexus Gaming!</p>
+      </section>
+    </main>
 
-    <section id="E-Esports" class="E-Esports">
-      <h2 class="E-Esports">E-Esports</h2>
-      <p>Fique por dentro das competições eletrônicas mais importantes!</p>
-    </section>
-
-    <section id="Jogos" class="Jogos">
-      <h2 class="Jogos">Jogos</h2>
-      <p>Descubra os melhores jogos do momento!</p>
-    </section>
-
-    <!-- Script carregado no final do corpo -->
     <script src="script.js"></script>
   </body>
 </html>

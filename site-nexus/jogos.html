@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos</title>
-</head>
-<body>
-    <h1>Jogos</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogos | Nexus Gaming</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <button class="botao-menu" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu-lateral">
+      <h2 class="menu-titulo">Menu</h2>
+      <a href="index.html" class="menu-link">Início</a>
+      <a href="noticias.html" class="menu-link">Notícias</a>
+      <a href="esports.html" class="menu-link">eSports</a>
+      <a href="jogos.html" class="menu-link ativo">Jogos</a>
+    </nav>
+
+    <header>
+      <h1 class="titulo-site">Nexus Gaming</h1>
+    </header>
+
+    <main>
+
+
+      <section id="jogos-gratis">
+        <h2 class="titulo-secao">Jogos </h2>
+        <p class="texto">As melhores ofertas do momento.</p>
+        <div id="lista-jogos-gratis"></div>
+      </section>
+
+      
+    </main>
+
+    <script src="script.js"></script>
+    <script src="jogos.js"></script>
+  </body>
 </html>
