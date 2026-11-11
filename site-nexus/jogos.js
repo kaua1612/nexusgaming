@@ -3,7 +3,7 @@ const API_JOGOS = 'https://www.gamerpower.com/api/giveaways?type=game&sort-by=po
 const MAX_JOGOS = 39;
  
 function formatarData(texto) {
-  // end_date vem como "2026-11-10 23:59:00", ou "N/A" quando não tem prazo
+
   if (!texto || texto === 'N/A') return '';
   const data = new Date(texto.replace(' ', 'T'));
   return data.toLocaleDateString('pt-BR');
