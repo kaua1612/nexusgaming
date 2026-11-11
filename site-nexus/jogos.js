@@ -45,7 +45,16 @@ async function carregarJogosGratis() {
  
   try {
     const resposta = await fetch(API_JOGOS);
-    const jogos = await resposta.json();
+
+console.log("Status da API:", resposta.status);
+
+if (!resposta.ok) {
+    throw new Error("Erro HTTP: " + resposta.status);
+}
+
+const jogos = await resposta.json();
+
+console.log("Jogos recebidos:", jogos);
  
     // Quando não há resultados, a API devolve um objeto em vez de uma lista
     if (!Array.isArray(jogos) || jogos.length === 0) {
